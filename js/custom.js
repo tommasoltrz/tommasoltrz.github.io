@@ -350,28 +350,24 @@ document.addEventListener('DOMContentLoaded', function() {
                 setImageBackground()
             };
 
+            if (window.innerWidth >= 720) {
 
+                // init controller
+                controller = new ScrollMagic.Controller();
 
-            // init controller
-            controller = new ScrollMagic.Controller();
+                var tween = TweenLite.to(image, 0.5, {
+                    backgroundPosition: "inherit 100%",
+                    yoyo: false,
+                });
+                // build scene and set duration to window height
+                scene = new ScrollMagic.Scene({
+                        triggerElement: container,
+                        duration: "100%",
+                        triggerHook: hook,
+                    })
+                    .setTween(tween)
+                    .addTo(controller);
 
-            var tween = TweenLite.to(image, 0.5, {
-                backgroundPosition: "inherit 100%",
-                yoyo: false,
-            });
-            // build scene and set duration to window height
-            scene = new ScrollMagic.Scene({
-                    triggerElement: container,
-                    duration: "100%",
-                    triggerHook: hook,
-                })
-                .setTween(tween)
-                .addTo(controller);
-
-
-            if (window.innerWidth <= 720) {
-                console.log("wowowowow");
-                controller.removeScene(scene);
             }
 
 
@@ -421,7 +417,8 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         onLeave: function() {
-            controller = controller.destroy(true);
+          if (window.innerWidth >= 720) {
+            controller = controller.destroy(true);}
             var container = document.getElementById("single_project_image_container");
             TweenLite.to(".single_project_content_row, .video", 0.5, {
                 opacity: 0
