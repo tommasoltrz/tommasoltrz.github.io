@@ -6,8 +6,8 @@ if (document.title != "Tommaso Laterza") { // in case of refresh
 
 document.addEventListener('DOMContentLoaded', function() {
 
-  var loader = document.getElementById('loader');
-  loader.parentNode.removeChild(loader);
+    var loader = document.getElementById('loader');
+    loader.parentNode.removeChild(loader);
 
 
     var section1 = document.getElementById('contactsTop');
@@ -350,9 +350,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 setImageBackground()
             };
 
-            if(window.innerWidth >= 720){
-              console.log("wwoowowowoowowowowowowo");
-              console.log(window.innerWidth);
+
 
             // init controller
             controller = new ScrollMagic.Controller();
@@ -370,7 +368,11 @@ document.addEventListener('DOMContentLoaded', function() {
                 .setTween(tween)
                 .addTo(controller);
 
-              }
+
+            if (window.innerWidth <= 720) {
+                console.log("wowowowow");
+                controller.removeScene(scene);
+            }
 
 
             function setImageBackground() {
