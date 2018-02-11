@@ -1,0 +1,143 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset=utf-8>
+    <title>Postcard</title>
+    <meta name="Postcard" content="Portfolio">
+    <meta name="keywords" content="Interaction, Design, Technologist, JavaScript">
+    <meta name="author" content="Tommaso Laterza">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+    <script src="js/ScrollMagic.min.js"></script>
+    <script src="js/animation.gsap.min.js"></script>
+    <link rel="stylesheet" href="css/lightgallery.css">
+    <script src="js/lightgallery.min.js"></script>
+    <script src="js/baffle.min.js"></script>
+    <script src="js/custom.js"></script>
+</head>
+
+<body>
+
+    <main id="barba-wrapper">
+        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects.html" data-proj="index.html">
+            <div class="row single_project_row">
+                <div class="col-md-12 col-sm-12  single_project_col" align="center">
+                    <div id="single_project_date" class="single_project_content_row">Interactive installation: Milano/Shenzhen Design Week 2017</div>
+                    <div id="single_project_image_container">
+                        <div id="single_project_Image" style="background:
+                            url(img/back/postcard.png);
+                            background-repeat: no-repeat;
+                            background-attachment: fixed;
+                            background-position: 50% 15%;
+                            width: 100%;
+                            height: 100%;"></div>
+
+                    </div>
+                    <div class="single_project_title"><span id="single_project_title_span">POSTCARD</span></div>
+                </div>
+
+                <div class="row single_project_content_row">
+                    <div class="col-md-5 col-sm-10 single_project_text_col">
+                        <h2>In a nutshell</h2>
+                        <p>
+                            Postcard from Casa Jasmina – <em>Chatting with the Home of the Future</em> is an interactive installation representing a compact version of the home of the future. The exhibition is an event born in collaboration between
+                            <a href="casajasmina.html" class="link">Casa Jasmina</a> and <a href="http://thingsconmilan.com/" class="link">ThingsCon Milan</a>.</p>
+                        <p>The installation is made of six devices, framed in simple and archetypal wooden structures, for six of the most common functions in a smart domestic setting: a temperature control system, a sensor tower, a lightning system, a speaker,
+                            a privacy-related device and a smart mirror.
+                        </p>
+                        <p>Not only a collection of the best of Casa Jasmina, but first and foremost an interactive experience. Postcard from Casa Jasmina replicates a 1:1 model of a home automation system, in which all the devices can be controlled by the
+                            visitors through their smartphone.
+                        </p>
+
+                    </div>
+                    <div class="col-md-5 col-sm-10 single_project_text_col">
+                        <h2>Development</h2>
+                        <p>
+                            What makes it possible is a chatbot: a software that is able to simulate a conversation with the user, responding to his requests.
+                            The exhibition is based on a conversational UI system designed to make the interaction process and the chatbot’s behaviour more and more sophisticated – to the point where the chatbot itself will try to anticipate the users’ desires and needs.
+                      </p>
+                      <p>
+                        The interaction between the public and the installation happens through several chat application, such as Facebook Messanger, Telegram and Wechat.
+                        The Bot, developed using Ubot and Wit.ai, would execute a sentiment analysis of the received messages and react accordingly with different <em>house settings</em>.
+                        The six devices are connected to each other through an open source hub called Home Assistant.
+                      </p>
+                      <p>
+                          The whole project was a 4-weeks effort in which I coordinated and worked with a team composed by Edoardo Tenani (developer), Pierluigi Vona (maker) and Alessandro Squattrito (designer).
+                    </p>
+                    </div>
+
+                </div>
+
+                <div class="row gallery_col single_project_content_row">
+                    <div class="gallery_title"><a href="">//</a></div>
+                    <div class="col-md-12 col-sm-1">
+                        <div class="demo-gallery">
+                            <ul id="lightgallery">
+                              <li data-src="img/postcard/pcard1.jpg" data-sub-html="<h4>Poster</h4>">
+                                  <a href="">
+                                      <img class="img-responsive" src="img/postcard/post_thumb1.png">
+                                  </a>
+                              </li>
+                              <li data-src="img/postcard/pcard2.jpg" data-sub-html="<h4>The family</h4><p>Smart mirror missing<p/>">
+                                  <a href="">
+                                      <img class="img-responsive" src="img/postcard/post_thumb2.png">
+                                  </a>
+                              </li>
+
+                              <li data-src="img/postcard/pcard7.png" data-sub-html="<h4>Conversation screenshot</h4>">
+                                  <a href="">
+                                      <img class="img-responsive" src="img/postcard/post_thumb7.png">
+                                  </a>
+                              </li>
+                              <li data-src="img/postcard/pcard8.png" data-sub-html="<h4>Conversation screenshot</h4>">
+                                  <a href="">
+                                      <img class="img-responsive" src="img/postcard/post_thumb8.png">
+                                  </a>
+                              </li>
+                              <li data-src="img/postcard/pcard9.png" data-sub-html="<<h4>Conversation test</h4>">
+                                  <a href="">
+                                      <img class="img-responsive" src="img/postcard/post_thumb9.png">
+                                  </a>
+                              </li>
+                              <li data-src="img/postcard/pcard10.png" data-sub-html="<h4>Conversation screenshot</h4>">
+                                  <a href="">
+                                      <img class="img-responsive" src="img/postcard/post_thumb10.png">
+                                  </a>
+                              </li>
+
+                              <li data-src="img/postcard/pcard3.jpg" data-sub-html="<h4>Lights</h4>">
+                                  <a href="">
+                                      <img class="img-responsive" src="img/postcard/post_thumb3.png">
+                                  </a>
+                              </li>
+                              <li data-src="img/postcard/pcard6.jpg" data-sub-html="<h4>When asked about privacy, a sheet of paper with all the information the bot has collected about the user is printed</h4>">
+                                  <a href="">
+                                      <img class="img-responsive" src="img/postcard/post_thumb6.png">
+                                  </a>
+                              </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="nav_projects_container">
+                    <a href="tutorial.html"><button id="prev_btn" class="btn ">PREV</button></a>
+                    <a href="workshop.html"><button id="next_btn"  class="btn ">NEXT</button></a>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+    </main>
+
+    <script src="js/barba.js"></script>
+</body>
+
+</html>
