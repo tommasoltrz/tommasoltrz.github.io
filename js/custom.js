@@ -350,6 +350,10 @@ document.addEventListener('DOMContentLoaded', function() {
                 setImageBackground()
             };
 
+            if(window.innerWidth >= 720){
+              console.log("wwoowowowoowowowowowowo");
+              console.log(window.innerWidth);
+
             // init controller
             controller = new ScrollMagic.Controller();
 
@@ -365,6 +369,8 @@ document.addEventListener('DOMContentLoaded', function() {
                 })
                 .setTween(tween)
                 .addTo(controller);
+
+              }
 
 
             function setImageBackground() {
