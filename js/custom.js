@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
     var loader = document.getElementById('loader');
     loader.parentNode.removeChild(loader);
 
-
     var section1 = document.getElementById('contactsTop');
     var section3 = document.getElementById('projectsLeft');
 
@@ -226,7 +225,7 @@ document.addEventListener('DOMContentLoaded', function() {
             });
             const contact_title = baffle(document.getElementById('tommasolaterza'));
             contact_title.set({
-                characters: '#@><',
+                characters: '#@ >< ',
                 speed: 100
             });
             contact_title.start();
@@ -303,13 +302,15 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     projectsPage.init();
 
+
+    /////////// SINGLE PROJECTS ///////////
+
+
     var controller;
     var scene;
     var single_project_namespace = Barba.BaseView.extend({
         namespace: 'single_project_namespace',
-        onEnter: function() {
-
-        },
+        onEnter: function() {},
         onEnterCompleted: function() {
 
             lightGallery(document.getElementById('lightgallery'));
@@ -346,12 +347,19 @@ document.addEventListener('DOMContentLoaded', function() {
 
             setImageBackground();
 
-            body.onresize = function() {
-                setImageBackground()
+            var resizeId;
+            window.onresize = function() {
+                clearTimeout(resizeId);
+                resizeId = setTimeout(doneResizing, 500);
             };
 
-            if (window.innerWidth >= 720) {
+            function doneResizing() {
+                if (window.innerWidth > 720) {
+                    setImageBackground();
+                }
+            }
 
+            if (window.innerWidth >= 720) {
                 // init controller
                 controller = new ScrollMagic.Controller();
 
@@ -417,8 +425,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         onLeave: function() {
-          if (window.innerWidth >= 720) {
-            controller = controller.destroy(true);}
+            if (window.innerWidth >= 720) controller = controller.destroy(true);
             var container = document.getElementById("single_project_image_container");
             TweenLite.to(".single_project_content_row, .video", 0.5, {
                 opacity: 0
