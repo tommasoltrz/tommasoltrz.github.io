@@ -528,6 +528,10 @@ ul {
         padding-left: 0px;
         padding-right: 0px;
     }
+    .single_project_col{
+      padding-left: 0px !important;
+      padding-right: 0px !important;
+    }
     #single_project_image_container{
       min-width: 100% ;
     }
