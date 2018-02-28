@@ -417,11 +417,8 @@ document.addEventListener('DOMContentLoaded', function() {
                     } else if (window.innerWidth <= 1024) {
                         image_width = container_width;
                         image.style.backgroundSize = image_width + "px";
-                        image.style.backgroundPosition = "50% 110px";
+                        image.style.backgroundPosition = "50% " + offsetY * (window.innerWidth) / (window.innerHeight - container_height) + "%";
                     }
-
-
-
 
                 }
 
@@ -435,9 +432,6 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
                 TweenLite.set("#single_project_title_span", {
                     opacity: 0
-                });
-                TweenLite.set("#single_project_date", {
-                    x: container.offsetX
                 });
 
                 tweetone = TweenLite.to(container, 1, {
