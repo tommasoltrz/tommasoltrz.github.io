@@ -519,12 +519,21 @@ ul {
 
 /*/////// MOBILE VIEW ///////*/
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
     body {
         font-size: 0.7em;
     }
     .body {
         padding-top: 80px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #single_project_image_container{
+      min-width: 100% ;
+    }
+    #single_project_Image{
+      background-position: 0px 10px;
+      width: 100vw ;
     }
     .BoxTitle {
         font-size: 1.2em;
@@ -541,9 +550,12 @@ ul {
 
 /*/////// MIDDLE VIEW ///////*/
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1024px) {
     body {
         font-size: 1em;
+    }
+    .body {
+        padding-top: 80px;
     }
     .BoxTitle {
         font-size: 1.2em;

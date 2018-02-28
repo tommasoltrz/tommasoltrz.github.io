@@ -414,10 +414,13 @@ document.addEventListener('DOMContentLoaded', function() {
                         image_width = 800;
                         image.style.backgroundSize = image_width + "px";
                         image.style.backgroundPosition = "50% 110px";
-                    } else if (window.innerWidth <= 1024) {
-                        image_width = container_width;
+                    } else if (window.innerWidth <= 1024 && window.innerWidth > 768) {
+                        image_width = 600;
                         image.style.backgroundSize = image_width + "px";
-                        image.style.backgroundPosition = "50% " + offsetY * (window.innerWidth) / (window.innerHeight - container_height) + "%";
+                        image.style.backgroundPosition = "50% 110px";
+                    } else if (window.innerWidth <= 768) {
+                        image_width = window.innerWidth;
+                        image.style.backgroundSize = image_width + "px";
                     }
 
                 }
