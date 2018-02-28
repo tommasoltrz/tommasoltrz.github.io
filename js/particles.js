@@ -32,7 +32,7 @@ function init() {
     var directionalLight = new THREE.DirectionalLight(0xffeedd);
     directionalLight.position.set(0, 0, 1);
     scene.add(directionalLight);
-    // scene.background = new THREE.Color( 0xFFFFFF );
+    // scene.background = new THREE.Color( 0x000000 );
 
     width = window.innerWidth;
     height = window.innerHeight;

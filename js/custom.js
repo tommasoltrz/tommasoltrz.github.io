@@ -27,14 +27,26 @@ document.addEventListener('DOMContentLoaded', function() {
         speed: 100
     });
 
-
-
     section1.onmouseover = function() {
         b.reveal(1000);
     }
     section3.onmouseover = function() {
         c.reveal(1000);
     }
+
+    var invertedColours = false;
+    document.getElementsByTagName("BODY")[0].ondblclick = function() {
+        if (document.title == "Tommaso Laterza") {
+            if (!invertedColours) {
+                invertedColours = true;
+                document.getElementsByTagName("BODY")[0].style.backgroundColor = "#2C353A";
+            } else {
+                invertedColours = false;
+                document.getElementsByTagName("BODY")[0].style.backgroundColor = "white";
+            }
+        }
+    };
+
 
     // ########## page transition ########## //
 
@@ -65,6 +77,10 @@ document.addEventListener('DOMContentLoaded', function() {
         GoToPage: function() {
             if (document.title != "Tommaso Laterza") { // in case of refresh
                 explode();
+            }
+            if (invertedColours) {
+                invertedColours = false;
+                document.getElementsByTagName("BODY")[0].style.backgroundColor = "#fff";
             }
             var _this = this;
 
@@ -189,6 +205,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     };
 
+    // ########## HOME TRANSITIONS ########## //
+
     var home = Barba.BaseView.extend({
         namespace: 'home',
         onEnterCompleted: function() {
@@ -207,6 +225,8 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     home.init();
 
+    // ########## CONTACTS TRANSITIONS ########## //
+
     var contacts = Barba.BaseView.extend({
         namespace: 'contacts',
         onEnterCompleted: function() {
@@ -216,16 +236,10 @@ document.addEventListener('DOMContentLoaded', function() {
         onLeave: function() {
             TweenLite.to("#tommaso", 0.5, {
                 opacity: 0,
-                // onComplete: function() {
-                //     TweenLite.to(gradient, 0.6, {
-                //         width: 0,
-                //         ease: Power2.easeOut,
-                //     });
-                // }
             });
             const contact_title = baffle(document.getElementById('tommasolaterza'));
             contact_title.set({
-                characters: '#@ >< ',
+                characters: '#@><',
                 speed: 100
             });
             contact_title.start();
@@ -233,6 +247,8 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     contacts.init();
+
+    // ########## PROJECT PAGE TRANSITIONS ########## //
 
     var projectsPage = Barba.BaseView.extend({
         namespace: 'projectsPage',
@@ -302,9 +318,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     projectsPage.init();
 
-
     /////////// SINGLE PROJECTS ///////////
-
 
     var controller;
     var scene;
@@ -339,11 +353,10 @@ document.addEventListener('DOMContentLoaded', function() {
             }
 
             var body = document.getElementsByTagName("BODY")[0];
+            var parent = document.getElementsByClassName("single_project_row");
             var container = document.getElementById("single_project_image_container");
             var image = document.getElementById("single_project_Image");
-            var parent = document.getElementsByClassName("single_project_row");
             var offsetY = (container.offsetTop + parent[0].offsetTop) * 100 / window.innerWidth;
-            var hook = ((container.offsetTop + parent[0].offsetTop) * 100 / window.innerHeight) / 100;
 
             setImageBackground();
 
@@ -364,16 +377,17 @@ document.addEventListener('DOMContentLoaded', function() {
                 controller = new ScrollMagic.Controller();
 
                 var tween = TweenLite.to(image, 0.5, {
-                    backgroundPosition: "inherit 100%",
+                    backgroundPosition: "inherit 400px",
                     yoyo: false,
                 });
                 // build scene and set duration to window height
                 scene = new ScrollMagic.Scene({
                         triggerElement: container,
                         duration: "100%",
-                        triggerHook: hook,
+                        triggerHook: 110 / window.innerHeight,
                     })
                     .setTween(tween)
+                    // .addIndicators({name: "1 (duration: 100%)"})
                     .addTo(controller);
 
             }
@@ -383,14 +397,32 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 var container_width = (window.innerWidth / 100) * 65;
                 var container_height = (container_width / 100) * 55;
+                var image_width;
 
                 if (image.tagName == "VIDEO") {
                     image.height = container_height;
                     image.width = container_width;
                 } else {
-                    var image_background_size = String(container_width) + "px " + String(container_height) + "px";
-                    image.style.backgroundSize = image_background_size;
-                    image.style.backgroundPosition = "50% " + offsetY * (window.innerWidth) / (window.innerHeight - container_height) + "%";
+                    // var image_background_size = String(container_width) + "px " + String(container_height) + "px";
+                    // image.style.backgroundPosition = "50% " + offsetY * (window.innerWidth) / (window.innerHeight - container_height) + "%";
+
+                    if (window.innerWidth > 1280) {
+                        image_width = 1100;
+                        image.style.backgroundSize = image_width + "px";
+                        image.style.backgroundPosition = "50% 110px";
+                    } else if (window.innerWidth <= 1280 && window.innerWidth > 1024) {
+                        image_width = 800;
+                        image.style.backgroundSize = image_width + "px";
+                        image.style.backgroundPosition = "50% 110px";
+                    } else if (window.innerWidth <= 1024) {
+                        image_width = container_width;
+                        image.style.backgroundSize = image_width + "px";
+                        image.style.backgroundPosition = "50% 110px";
+                    }
+
+
+
+
                 }
 
                 TweenLite.set(container, {
@@ -409,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 });
 
                 tweetone = TweenLite.to(container, 1, {
-                    height: container_height,
+                    height: image_width * 0.56,
                     y: 0,
                     onComplete: function() {
                         TweenLite.to("#single_project_title_span", 0.5, {
@@ -442,7 +474,6 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
     single_project_namespace.init();
-
 
     function contactEntered() {
         if (document.getElementById("projectsLeft").textContent != "PROJECTS") {
