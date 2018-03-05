@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     var left_nav = document.getElementById('contactsTop');
     var right_nav = document.getElementById('projectsLeft');
+    var invertedColours = false;
 
     var subtext = ["@", "▒", "", "#", "░"];
 
@@ -30,6 +31,8 @@ document.addEventListener('DOMContentLoaded', function() {
     right_nav.onmouseover = function() {
         shuffle_right_nav.reveal(1000);
     }
+
+
 
     // ########## PAGE TRANSITIONS ########## //
 
@@ -142,9 +145,20 @@ document.addEventListener('DOMContentLoaded', function() {
                 shuffle_right_nav.text(text => 'PROJECTS');
                 shuffle_right_nav.reveal(1000);
             }
+            document.getElementsByTagName("BODY")[0].ondblclick = function() {
+                    if (!invertedColours) {
+                        invertedColours = true;
+                        document.getElementsByTagName("BODY")[0].style.backgroundColor = "#2C353A";
+                    } else {
+                        invertedColours = false;
+                        document.getElementsByTagName("BODY")[0].style.backgroundColor = "white";
+                    }
+            };
         },
         onLeave: function() {
             explode();
+            document.getElementsByTagName("BODY")[0].style.backgroundColor = "white";
+            invertedColours = false;
         },
         onLeaveCompleted: function() {
             clearInterval(LoadingModels);
