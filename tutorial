@@ -53,7 +53,7 @@
 <body>
 
     <main id="barba-wrapper">
-        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects.html" data-proj="index.html">
+        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects" data-proj="index.html">
             <div class="row single_project_row">
                 <div class="col-md-12 col-sm-12  col-12" align="center">
                     <div id="single_project_date" class="single_project_content_row">Tutorials for Arduino: 2015 - 2018</div>
@@ -156,8 +156,8 @@
 
 
                 <div id="nav_projects_container">
-                    <a href="fovea.html"><button id="prev_btn" class="btn ">PREV</button></a>
-                    <a href="postcard.html"><button id="next_btn"  class="btn ">NEXT</button></a>
+                    <a href="fovea"><button id="prev_btn" class="btn ">PREV</button></a>
+                    <a href="postcard"><button id="next_btn"  class="btn ">NEXT</button></a>
                     </div>
 
                 </div>
@@ -165,7 +165,7 @@
 
             <div id="nav_container">
                 <div id="nav_up">
-                    <a class="conTop" href="projects.html">
+                    <a class="conTop" href="projects">
                         <div id="contactsTop" class="title ">CONTACTS</div>
                     </a>
                     <a class="projLeft" href="index.html">

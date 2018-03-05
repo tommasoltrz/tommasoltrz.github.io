@@ -3,13 +3,11 @@
 
 <head>
     <meta charset=utf-8>
-    <title>TVINGA</title>
-    <meta name="TVINGA" content="Portfolio">
+    <title>Casa Jasmina</title>
+    <meta name="Arduino Disability Orchestra" content="Portfolio">
     <meta name="keywords" content="Interaction, Design, Technologist, JavaScript">
     <meta name="author" content="Tommaso Laterza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
-
     <!-- INCLUDE CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -53,85 +51,73 @@
 <body>
 
     <main id="barba-wrapper">
-        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects.html" data-proj="index.html">
+        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects" data-proj="index.html">
+
             <div class="row single_project_row">
-                <div class="col-md-12 col-sm-12 col-12" align="center">
-                    <div id="single_project_date" class="single_project_content_row">Design fiction: November 2017, Malmo University</div>
+                <div class="col-md-12 col-sm-12  col-12" align="center">
+                    <div id="single_project_date" class="single_project_content_row">Workshop: 2015</div>
                     <div id="single_project_image_container">
                         <div id="single_project_Image" style="background:
-                            url(img/back/tvigna.png);
+                            url(img/back/ado.png);
                             background-repeat: no-repeat;
                             background-attachment: fixed;
+                            background-position: 50% 15%;
                             width: 100%;
                             height: 100%;"></div>
                     </div>
-                    <div class="single_project_title"><span>TVINGA</span></div>
+                    <div class="single_project_title"><span>ARDUINO DISABILITY ORCHESTRA</span></div>
                 </div>
+
 
 
                 <div class="row single_project_content_row">
                     <div class="col-md-5 col-sm-10 single_project_text_col">
-                        <h2>In a nutshell</h2>
-                        <p>In most situations we are no longer required to make any effort; everything around us is getting effortless, frictionless. This makes things more handy, easy to use and even more accessible, but what if we needed that friction,
-                            that little effort?</br>
-                            </br><strong>Tvinga, is a critical design project</strong> developed to address the lack of physicality in the everyday life.</br>
-                            </br>
-                            How would a future without physicality look like?</br>Will we be witnessing a deskilling phenomenon?</br>What were tiny moments of physicality that technology took away?</br>Can we somehow reintroduce them?
-                        </p>
+                        <h2>Background</h2>
+                        <p>Arduino Disability Orchestra is a format for a university level course that I developed with the student team “Lights On” at <strong>Politecnico di Torino</strong>. As a student team tightly connected to our faculty we were enquiring
+                            and researching about the quality of teaching. One of the problems highlighted by the students was the lack of practical activities, so we decided to organise workshops and courses.</br>
+                            </br>ADO, initially, was born when we met the "Vivere" Association at Techlab, Chieri's makerspace. We wanted to share the knowledge of the makers and designers from Techlab with Politecnico's in-the-making engineers in order to
+                            <strong>create electronic instruments for the disabled people of "Vivere"</strong>.</p>
                     </div>
                     <div class="col-md-5 col-sm-10 single_project_text_col">
-                        <h2>The products</h2>
-                        <p>Tvinga is a family of objects, crafted out of concrete, designed to be hard to interact with. Both the material and the shape make them uneasy and difficult to use.</br>
-                            </br>
-                            <strong>The Alarm Clock</strong>, in order to be turned off, requires the user to choose between a long complex digital task or lifting the clock itself.</br>
-                            </br>
-                            <strong>The Mouse</strong> behaves as a regular mouse with the exception that, due to its weight, it requires high levels of force and precision, and, in order to be clicked, the wooden surface has to be punched with force.
-
-                        </p>
+                        <h2>The workshop</h2>
+                        <p>The initial project was supposed to be a two month workshop, but ended up becoming an open hub for enterprising young engineers, local designers and makers. With this ongoing project we gained the support of institutions like <strong>Politecnico
+                            di Torino, Fablab Torino and Officine Arduino.</strong></br>
+                            </br>The project was officially presented at Munich Maker Faire 2016 as part of an initiative to showcase emerging Italian makers and entrepreneurs. At the moment we’re engaging other organizations of the territory to explore the
+                            impact of the interfaces we have designed, in order to extend them to their full potential.</p>
                     </div>
                 </div>
-
-
-                <div class="col-2 col-md-2 col-sm-0"></div>
-                <div class="col-8 col-md-8 col-sm-12 video-col">
-                    <div class="embed-responsive embed-responsive-16by9 video">
-                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/251469468"></iframe>
-                    </div>
-                </div>
-                <div class="col-2 col-md-2 col-sm-0"></div>
-
                 <div class="row gallery_col single_project_content_row">
-
-                    <div class="github_icon">
-                        <a href="https://github.com/tommasoltrz/TVINGA"><img src="img/icons/github.png" class="contacts_icons"></a>
-                    </div>
-
-                    <div class="col-md-12 col-sm-1">
+                    <div class="col-md-12 col-sm-12">
                         <div class="demo-gallery">
                             <ul id="lightgallery">
-                                <li data-src="img/tvigna/tv3.png" data-sub-html="<h4>The Mouse</h4></p>">
+                                <li data-src="img/ado/ado1.jpg" data-sub-html="<h4>The band</h4><p>playing the instruments developed during the workshop</p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_three.png">
+                                        <img class="img-responsive" src="img/ado/ado_thumb1.png">
                                     </a>
                                 </li>
-                                <li data-src="img/tvigna/tv4.png" data-sub-html="<h4>The Alarm Clock</h4>">
+                                <li data-src="img/ado/ado2.jpg"  data-sub-html="<h4>The band</h4><p>playing the instruments developed during the workshop</p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_four.png">
+                                        <img class="img-responsive" src="img/ado/ado_thumb2.png">
                                     </a>
                                 </li>
-                                <li data-src="img/tvigna/tv1.png" data-sub-html="<h4>Crafting concrete</h4>">
-                                    <a href="">
-                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_one.png">
+                                <li data-src="img/ado/ado3.jpg" data-sub-html="<h4>The students</h4>">
+                                  <a href="">
+                                        <img class="img-responsive" src="img/ado/ado_thumb3.png">
                                     </a>
                                 </li>
-                                <li data-src="img/tvigna/tv2.png" data-sub-html="<h4>Electronic components</h4></p>">
+                                <li data-src="img/ado/ado4.jpg" data-sub-html="<h4>The students</h4>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_two.png">
+                                        <img class="img-responsive" src="img/ado/ado_thumb4.png">
                                     </a>
                                 </li>
-                                <li data-src="img/tvigna/tv5.png" data-sub-html="<h4>The Team</h4>">
+                                <li data-src="img/ado/ado6.png" data-sub-html="<h4>Prototype Debaser</h4><p>A capacitive drum that detects the movements of the hand up to 20 cm and reacts accordigly with melodies.</p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_five.png">
+                                        <img class="img-responsive" src="img/ado/ado_thumb6.png">
+                                    </a>
+                                </li>
+                                <li data-src="img/ado/ado7.jpg" data-sub-html="<h4>Prototype Cavagnin</h4><p>A theremin redesign to fit the needs of the musician that had restricted arms movements</p>">
+                                    <a href="">
+                                        <img class="img-responsive" src="img/ado/ado_thumb7.png">
                                     </a>
                                 </li>
                             </ul>
@@ -139,18 +125,16 @@
                     </div>
                 </div>
 
-
                 <div id="nav_projects_container">
-                    <a href="casajasmina.html"><button id="prev_btn" class="btn ">PREV</button></a>
-                    <a href="fovea.html"><button id="next_btn"  class="btn ">NEXT</button></a>
+                    <a href=""><button id="prev_btn" class="btn ">PREV</button></a>
+                    <a href=""><button id="next_btn" class="btn ">NEXT</button></a>
                 </div>
-
             </div>
         </div>
 
         <div id="nav_container">
             <div id="nav_up">
-                <a class="conTop" href="projects.html">
+                <a class="conTop" href="projects">
                     <div id="contactsTop" class="title ">CONTACTS</div>
                 </a>
                 <a class="projLeft" href="index.html">
@@ -158,22 +142,22 @@
                 </a>
             </div>
         </div>
-
     </main>
 
     <script src="js/three.js"></script>
     <script src="js/loaders/OBJLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
     <script src="js/particles.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115061309-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
 
-      gtag('config', 'UA-115061309-1');
-    </script>
-  </body>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115061309-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-115061309-1');
+</script>
+</body>
 
 </html>

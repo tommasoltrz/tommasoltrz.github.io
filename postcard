@@ -53,7 +53,7 @@
 <body>
 
     <main id="barba-wrapper">
-        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects.html" data-proj="index.html">
+        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects" data-proj="index.html">
             <div class="row single_project_row">
                 <div class="col-md-12 col-sm-12  col-12" align="center">
                     <div id="single_project_date" class="single_project_content_row">Interactive installation: Milano/Shenzhen Design Week 2017</div>
@@ -74,7 +74,7 @@
                         <h2>In a nutshell</h2>
                         <p>
                             Postcard from Casa Jasmina – <em>Chatting with the Home of the Future</em> is an interactive installation representing a compact version of the home of the future. The exhibition is an event born in collaboration between
-                            <a href="casajasmina.html" class="link">Casa Jasmina</a> and <a href="http://thingsconmilan.com/" class="link">ThingsCon Milan</a>.</p>
+                            <a href="casajasmina" class="link">Casa Jasmina</a> and <a href="http://thingsconmilan.com/" class="link">ThingsCon Milan</a>.</p>
                         <p>The installation is made of six devices, framed in simple and archetypal wooden structures, for six of the most common functions in a smart domestic setting: a temperature control system, a sensor tower, a lightning system, a speaker,
                             a privacy-related device and a smart mirror.
                         </p>
@@ -154,15 +154,15 @@
 
 
                 <div id="nav_projects_container">
-                    <a href="tutorial.html"><button id="prev_btn" class="btn ">PREV</button></a>
-                    <a href="workshop.html"><button id="next_btn"  class="btn ">NEXT</button></a>
+                    <a href="tutorial"><button id="prev_btn" class="btn ">PREV</button></a>
+                    <a href="workshop"><button id="next_btn"  class="btn ">NEXT</button></a>
                     </div>
 
                 </div>
             </div>
             <div id="nav_container">
                 <div id="nav_up">
-                    <a class="conTop" href="projects.html">
+                    <a class="conTop" href="projects">
                         <div id="contactsTop" class="title ">CONTACTS</div>
                     </a>
                     <a class="projLeft" href="index.html">

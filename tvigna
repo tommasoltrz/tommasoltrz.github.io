@@ -3,8 +3,8 @@
 
 <head>
     <meta charset=utf-8>
-    <title>FOVEA</title>
-    <meta name="Fovea" content="Portfolio">
+    <title>TVINGA</title>
+    <meta name="TVINGA" content="Portfolio">
     <meta name="keywords" content="Interaction, Design, Technologist, JavaScript">
     <meta name="author" content="Tommaso Laterza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -53,111 +53,86 @@
 <body>
 
     <main id="barba-wrapper">
-        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects.html" data-proj="index.html">
+        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects" data-proj="index.html">
             <div class="row single_project_row">
-                <div class="col-md-12 col-sm-12  col-12" align="center">
-                    <div id="single_project_date" class="single_project_content_row">Chrome Extension: January 2017</div>
+                <div class="col-md-12 col-sm-12 col-12" align="center">
+                    <div id="single_project_date" class="single_project_content_row">Design fiction: November 2017, Malmo University</div>
                     <div id="single_project_image_container">
                         <div id="single_project_Image" style="background:
-                            url(img/back/fovea.png);
+                            url(img/back/tvigna.png);
                             background-repeat: no-repeat;
                             background-attachment: fixed;
                             width: 100%;
                             height: 100%;"></div>
-
                     </div>
-                    <div class="single_project_title"><span>FOVEA</span></div>
+                    <div class="single_project_title"><span>TVINGA</span></div>
                 </div>
+
 
                 <div class="row single_project_content_row">
                     <div class="col-md-5 col-sm-10 single_project_text_col">
                         <h2>In a nutshell</h2>
-                        <p>
-                            Personalised search results, news-streams and advertisements can lead us in a state of intellectual isolation.</br>
+                        <p>In most situations we are no longer required to make any effort; everything around us is getting effortless, frictionless. This makes things more handy, easy to use and even more accessible, but what if we needed that friction,
+                            that little effort?</br>
+                            </br><strong>Tvinga, is a critical design project</strong> developed to address the lack of physicality in the everyday life.</br>
                             </br>
-                            <strong><em>If you like this, you will like that</em></strong>.</br>
-                            </br>
-                            Fovea is a <a class="link" href="https://chrome.google.com/webstore/detail/fovea/hhmaeolomcebiodaclklehomnmlodopg?hl=it">Chrome Extension</a>, that helps breaking up the <strong>filter bubbles</strong>. It allows the user to
-                            manipulate the Google algorithm by forcing it to show first a certain kind of results, based on a database edited by the user itslef.</br>
-                            </br>
-                            Developed at Malmo university, Fovea was born as a critical design project to than be turned into a working tool.
+                            How would a future without physicality look like?</br>Will we be witnessing a deskilling phenomenon?</br>What were tiny moments of physicality that technology took away?</br>Can we somehow reintroduce them?
                         </p>
-
                     </div>
                     <div class="col-md-5 col-sm-10 single_project_text_col">
-                        <h2>Features</h2>
-                        <p>
-                            The Fovea default database includes some of the main news websites's names sorted by political inclination.</br>
-                            By dragging the slider left, the more democratic results will be shown first, while dragging it to the right the conservative ones will be prioritised.
+                        <h2>The products</h2>
+                        <p>Tvinga is a family of objects, crafted out of concrete, designed to be hard to interact with. Both the material and the shape make them uneasy and difficult to use.</br>
                             </br>
+                            <strong>The Alarm Clock</strong>, in order to be turned off, requires the user to choose between a long complex digital task or lifting the clock itself.</br>
                             </br>
-                            The <em>UI equality switch</em> reduce to the minimum every possible distraction by making the appereance of a website as neutral as possible. It creates an iframe that display only plain text formatted in the most neutral
-                            way.
-                            </br>
-                            </br>
-                            The <em>Bubble switch</em> inspects the browsing history of the user and block every website that has already been visited.
+                            <strong>The Mouse</strong> behaves as a regular mouse with the exception that, due to its weight, it requires high levels of force and precision, and, in order to be clicked, the wooden surface has to be punched with force.
 
+                        </p>
                     </div>
-
                 </div>
 
 
                 <div class="col-2 col-md-2 col-sm-0"></div>
                 <div class="col-8 col-md-8 col-sm-12 video-col">
                     <div class="embed-responsive embed-responsive-16by9 video">
-                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/3382W9n81Rc?rel=0"></iframe>
+                        <iframe class="embed-responsive-item" src="https://player.vimeo.com/video/251469468"></iframe>
                     </div>
                 </div>
                 <div class="col-2 col-md-2 col-sm-0"></div>
 
-
                 <div class="row gallery_col single_project_content_row">
+
                     <div class="github_icon">
-                        <a href="https://github.com/tommasoltrz/FOVEA"><img src="img/icons/github.png" class="contacts_icons"></a>
+                        <a href="https://github.com/tommasoltrz/TVINGA"><img src="img/icons/github.png" class="contacts_icons"></a>
                     </div>
+
                     <div class="col-md-12 col-sm-1">
                         <div class="demo-gallery">
                             <ul id="lightgallery">
-                                <li data-src="img/fovea/fv6.png" data-sub-html="<h4>Exhibition version with tangible interface</h4>">
+                                <li data-src="img/tvigna/tv3.png" data-sub-html="<h4>The Mouse</h4></p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/fovea/fv_thumb_6.png">
+                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_three.png">
                                     </a>
                                 </li>
-                                <li data-src="img/fovea/fv9.png" data-sub-html="<h4>Exhibition version with tangible interface</h4>">
+                                <li data-src="img/tvigna/tv4.png" data-sub-html="<h4>The Alarm Clock</h4>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/fovea/fv_thumb_9.png">
+                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_four.png">
                                     </a>
                                 </li>
-                                <li data-src="img/fovea/fv7.png" data-sub-html="<h4>Same Google research with different settings</h4>">
+                                <li data-src="img/tvigna/tv1.png" data-sub-html="<h4>Crafting concrete</h4>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/fovea/fv_thumb_7.png">
+                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_one.png">
                                     </a>
                                 </li>
-                                <li data-src="img/fovea/fv8.png" data-sub-html="<h4>Ui equality switch</h4>">
+                                <li data-src="img/tvigna/tv2.png" data-sub-html="<h4>Electronic components</h4></p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/fovea/fv_thumb_8.png">
+                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_two.png">
                                     </a>
                                 </li>
-                                <li data-src="img/fovea/fv1.png" data-sub-html="<h4>Slider central</h4>">
+                                <li data-src="img/tvigna/tv5.png" data-sub-html="<h4>The Team</h4>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/fovea/fv_thumb_1.png">
+                                        <img class="img-responsive" src="img/tvigna/tvinga_thumb_five.png">
                                     </a>
-                                </li>
-                                <li data-src="img/fovea/fv2.png" data-sub-html="<h4>Slider left</h4>">
-                                    <a href="">
-                                        <img class="img-responsive" src="img/fovea/fv_thumb_2.png">
-                                    </a>
-                                </li>
-                                <li data-src="img/fovea/fv3.png" data-sub-html="<h4>Slider right</h4>">
-                                    <a href="">
-                                        <img class="img-responsive" src="img/fovea/fv_thumb_3.png">
-                                    </a>
-                                </li>
-                                <li data-src="img/fovea/fv4.png" data-sub-html="<h4>Database editing interface</h4>">
-                                    <a href="">
-                                        <img class="img-responsive" src="img/fovea/fv_thumb_4.png">
-                                    </a>
-                                </li>
                                 </li>
                             </ul>
                         </div>
@@ -166,8 +141,8 @@
 
 
                 <div id="nav_projects_container">
-                    <a href="tvigna.html"><button id="prev_btn" class="btn ">PREV</button></a>
-                    <a href="tutorial.html"><button id="next_btn" class="btn ">NEXT</button></a>
+                    <a href="casajasmina"><button id="prev_btn" class="btn ">PREV</button></a>
+                    <a href="fovea"><button id="next_btn"  class="btn ">NEXT</button></a>
                 </div>
 
             </div>
@@ -175,7 +150,7 @@
 
         <div id="nav_container">
             <div id="nav_up">
-                <a class="conTop" href="projects.html">
+                <a class="conTop" href="projects">
                     <div id="contactsTop" class="title ">CONTACTS</div>
                 </a>
                 <a class="projLeft" href="index.html">
@@ -183,6 +158,7 @@
                 </a>
             </div>
         </div>
+
     </main>
 
     <script src="js/three.js"></script>
@@ -190,14 +166,14 @@
     <script src="js/OrbitControls.js"></script>
     <script src="js/particles.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-115061309-1"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115061309-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-  gtag('config', 'UA-115061309-1');
-</script>
-</body>
+      gtag('config', 'UA-115061309-1');
+    </script>
+  </body>
 
 </html>

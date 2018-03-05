@@ -4,10 +4,12 @@
 <head>
     <meta charset=utf-8>
     <title>Casa Jasmina</title>
-    <meta name="Arduino Disability Orchestra" content="Portfolio">
+    <meta name="Casa Jasmina" content="Portfolio">
     <meta name="keywords" content="Interaction, Design, Technologist, JavaScript">
     <meta name="author" content="Tommaso Laterza">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed" rel="stylesheet">
+
     <!-- INCLUDE CSS -->
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -51,90 +53,105 @@
 <body>
 
     <main id="barba-wrapper">
-        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects.html" data-proj="index.html">
+        <div class="barba-container container body" data-home="index.html" data-namespace="single_project_namespace" data-cont="projects" data-proj="index.html">
 
             <div class="row single_project_row">
-                <div class="col-md-12 col-sm-12  col-12" align="center">
-                    <div id="single_project_date" class="single_project_content_row">Workshop: 2015</div>
+                <div class="col-md-12 col-sm-12 col-12 " align="center">
+                    <div id="single_project_date" class="single_project_content_row">Research: 2015-2017</div>
                     <div id="single_project_image_container">
-                        <div id="single_project_Image" style="background:
-                            url(img/back/ado.png);
+                        <div id="single_project_Image"
+                            style=
+                            "background: url(img/back/casajasmina.png);
                             background-repeat: no-repeat;
-                            background-attachment: fixed;
-                            background-position: 50% 15%;
+                            background-attachment: fixed !important;
                             width: 100%;
-                            height: 100%;"></div>
+                            height: 100%;
+                            "></div>
                     </div>
-                    <div class="single_project_title"><span>ARDUINO DISABILITY ORCHESTRA</span></div>
+                    <div class="single_project_title"><span>CASA JASMINA</span></div>
                 </div>
 
 
 
                 <div class="row single_project_content_row">
                     <div class="col-md-5 col-sm-10 single_project_text_col">
-                        <h2>Background</h2>
-                        <p>Arduino Disability Orchestra is a format for a university level course that I developed with the student team “Lights On” at <strong>Politecnico di Torino</strong>. As a student team tightly connected to our faculty we were enquiring
-                            and researching about the quality of teaching. One of the problems highlighted by the students was the lack of practical activities, so we decided to organise workshops and courses.</br>
-                            </br>ADO, initially, was born when we met the "Vivere" Association at Techlab, Chieri's makerspace. We wanted to share the knowledge of the makers and designers from Techlab with Politecnico's in-the-making engineers in order to
-                            <strong>create electronic instruments for the disabled people of "Vivere"</strong>.</p>
+                        <h2>The open source way to the connected home</h2>
+                        <p>Curated by Bruce Sterling, Massimo Banzi and Jasmina Teshanovich, <a class="link" href="http://casajasmina.cc/">Casa Jasmina</a> is an ongoing pilot project in the business space of domestic electronic networking, or, “<strong>the Internet
+                            of Things in the Home.</strong>” Our goal is to integrate traditional Italian skills in furniture and interior design with emergent skills in Italian open-source electronics. </p>
+                        <p>Casa Jasmina in the last two years has been an exceptionally fertile research hub and idea collector; many events, workshops, meetup, conferences, residencies have been organized to bring together companies, artists, designers
+                            and makers to discuss and envision the home of the future.</p>
                     </div>
                     <div class="col-md-5 col-sm-10 single_project_text_col">
-                        <h2>The workshop</h2>
-                        <p>The initial project was supposed to be a two month workshop, but ended up becoming an open hub for enterprising young engineers, local designers and makers. With this ongoing project we gained the support of institutions like <strong>Politecnico
-                            di Torino, Fablab Torino and Officine Arduino.</strong></br>
-                            </br>The project was officially presented at Munich Maker Faire 2016 as part of an initiative to showcase emerging Italian makers and entrepreneurs. At the moment we’re engaging other organizations of the territory to explore the
-                            impact of the interfaces we have designed, in order to extend them to their full potential.</p>
+                        <h2>The research</h2>
+                        <p>What is really relevant to people in a “connected home”? What’s the real use of a connected washing machine or of a lamp that changes color? How can a connected experience enrich the life of the inhabitants of an apartment? What’s
+                            the relevance of Open Source software, open hardware and open design in this space? Those where some of the question that kicked off the project back in 2014.
+                        </p>
+                        <p>While the community and the interest in the project has been growing, the core team of the project has been involved in an extensive user research process to test ideas and scenarios on spot. Continuesly iterating, generating new
+                            ideas and building new Connected devices based on the knowledge gained along the process.</p>
                     </div>
                 </div>
+
+                <div class="col-2 col-md-2 col-sm-0"></div>
+                <div class="col-8 col-md-8 col-sm-12 video-col">
+                    <div class="embed-responsive embed-responsive-16by9 video">
+                        <iframe class="embed-responsive-item" src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2Fcasajasmina.to%2Fvideos%2F918998258261593%2F&show_text=0&width=560"></iframe>
+                    </div>
+                </div>
+                <div class="col-2 col-md-8 col-sm-0"></div>
+
+
                 <div class="row gallery_col single_project_content_row">
+                  <div class="github_icon">
+                      <a href="https://github.com/CasaJasmina"><img src="img/icons/github.png" class="contacts_icons"></a>
+                  </div>
+
                     <div class="col-md-12 col-sm-12">
                         <div class="demo-gallery">
                             <ul id="lightgallery">
-                                <li data-src="img/ado/ado1.jpg" data-sub-html="<h4>The band</h4><p>playing the instruments developed during the workshop</p>">
+                                <li data-src="img/cj/cj1.jpg" data-sub-html="<h4>The team</h4><p>From the top, Lorenzo Romagnoli, Gilberto Conti, Bruce Sterling, me, Mattia della Libera, Jasmina Teshanovich, Alessandro Squatrito.</p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/ado/ado_thumb1.png">
+                                        <img class="img-responsive" src="img/cj/cj_thumb1.png">
                                     </a>
                                 </li>
-                                <li data-src="img/ado/ado2.jpg"  data-sub-html="<h4>The band</h4><p>playing the instruments developed during the workshop</p>">
+                                <li data-src="img/cj/cj2.jpg" data-sub-html="<h4>Design process</h4>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/ado/ado_thumb2.png">
+                                        <img class="img-responsive" src="img/cj/cj_thumb2.png">
                                     </a>
                                 </li>
-                                <li data-src="img/ado/ado3.jpg" data-sub-html="<h4>The students</h4>">
-                                  <a href="">
-                                        <img class="img-responsive" src="img/ado/ado_thumb3.png">
+                                <li data-src="img/cj/cj3.jpg" data-sub-html="<h4>Interactive Light System</h4>">
+                                    <a href="">
+                                        <img class="img-responsive" src="img/cj/cj_thumb3.png">
                                     </a>
                                 </li>
-                                <li data-src="img/ado/ado4.jpg" data-sub-html="<h4>The students</h4>">
+                                <li data-src="img/cj/cj4.jpg" data-sub-html="<h4>Issue Printer</h4><p>CA little thermal printer connected to github, capable of printing new issue opened on the casajasmina Github page and help us keep track of the projects.</p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/ado/ado_thumb4.png">
+                                        <img class="img-responsive" src="img/cj/cj_thumb4.png">
                                     </a>
                                 </li>
-                                <li data-src="img/ado/ado6.png" data-sub-html="<h4>Prototype Debaser</h4><p>A capacitive drum that detects the movements of the hand up to 20 cm and reacts accordigly with melodies.</p>">
+                                <li data-src="img/cj/cj5.jpg" data-sub-html="<h4>Smart Gardening</h4><p>Use Arduino Cloud to monitor the health of your garden and activate irrigation when needed.</p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/ado/ado_thumb6.png">
+                                        <img class="img-responsive" src="img/cj/cj_thumb5.png">
                                     </a>
                                 </li>
-                                <li data-src="img/ado/ado7.jpg" data-sub-html="<h4>Prototype Cavagnin</h4><p>A theremin redesign to fit the needs of the musician that had restricted arms movements</p>">
+                                <li data-src="img/cj/cj6.jpg" data-sub-html="<h4>Casa Jasmina objects</h4><p>design a family of open source object that can be easily reproduce using digital fabrication tools and open hardware.</p>">
                                     <a href="">
-                                        <img class="img-responsive" src="img/ado/ado_thumb7.png">
+                                        <img class="img-responsive" src="img/cj/cj_thumb6.png">
                                     </a>
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-
                 <div id="nav_projects_container">
-                    <a href=""><button id="prev_btn" class="btn ">PREV</button></a>
-                    <a href=""><button id="next_btn" class="btn ">NEXT</button></a>
+                    <a href="workshop"><button id="prev_btn" class="btn ">PREV</button></a>
+                    <a href="tvigna"><button id="next_btn" class="btn ">NEXT</button></a>
                 </div>
             </div>
         </div>
 
         <div id="nav_container">
             <div id="nav_up">
-                <a class="conTop" href="projects.html">
+                <a class="conTop" href="projects">
                     <div id="contactsTop" class="title ">CONTACTS</div>
                 </a>
                 <a class="projLeft" href="index.html">
@@ -148,7 +165,6 @@
     <script src="js/loaders/OBJLoader.js"></script>
     <script src="js/OrbitControls.js"></script>
     <script src="js/particles.js"></script>
-
     <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-115061309-1"></script>
 <script>

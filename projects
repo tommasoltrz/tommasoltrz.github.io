@@ -51,13 +51,13 @@
 
     <main id="barba-wrapper">
 
-        <div class="barba-container container" data-cont="contacts.html" data-proj="index.html" data-namespace="projectsPage">
+        <div class="barba-container container" data-cont="contacts" data-proj="index.html" data-namespace="projectsPage">
 
 
             <div class="row row_grid">
                 <div class="col-md-12 col-sm-12  col-projects ">
                     <img class="img-responsive img-fluid center-block image" src="img/casajasmina_cover.jpg" style="width:100%">
-                    <a class="single_project_link" href="casajasmina.html">
+                    <a class="single_project_link" href="casajasmina">
                         <div class="gradient"></div>
                         <div class="imageTitle">
                             <div class="BoxTitle">CASA JASMINA</br>
@@ -71,7 +71,7 @@
             <div class="row row_grid">
                 <div class="col-md-6 col-sm-6 col-projects">
                     <img class="imageProjectHome img-fluid image" src="img/AlarmClock.png">
-                    <a class="single_project_link" href="tvigna.html">
+                    <a class="single_project_link" href="tvigna">
                         <div class="gradient"></div>
                         <div class="imageTitle">
                             <div class="BoxTitle">TVIGNA</br>
@@ -84,7 +84,7 @@
                     <video id="vid" class="img-responsive img-fluid image" video autobuffer autoplay loop>
                     <source id="mp4" src="img/foveavideo.mp4" type="video/mp4">
                     </video>
-                    <a href="fovea.html">
+                    <a href="fovea">
                         <div class="gradient"></div>
                         <div class="imageTitle">
                             <div class="BoxTitle">FOVEA</br>
@@ -98,7 +98,7 @@
             <div class="row row_grid">
                 <div class="col-md-4 col-sm-4 col-projects">
                     <img class="imageProjectHome img-fluid image" src="img/tutorial.gif">
-                    <a class="single_project_link" href="tutorial.html">
+                    <a class="single_project_link" href="tutorial">
                         <div class="gradient"></div>
                         <div class="imageTitle">
                             <div class="BoxTitle">TUTORIALS</br>
@@ -109,7 +109,7 @@
                 </div>
                 <div class=" col-md-4 col-sm-4 col-projects">
                     <img class="imageProjectHome img-fluid image" src="img/pcard2.png">
-                    <a href="postcard.html">
+                    <a href="postcard">
                         <div class="gradient"></div>
                         <div class="imageTitle">
                             <div class="BoxTitle">POSTCARD</br>
@@ -120,7 +120,7 @@
                 </div>
                 <div class=" col-md-4 col-sm-4 col-projects ">
                     <img class="img-responsive img-fluid image" src="img/workshop.png">
-                    <a href="workshop.html">
+                    <a href="workshop">
                         <div class="gradient"></div>
                         <div class="imageTitle">
                             <div class="BoxTitle">WORKSHOPS</br>
@@ -136,7 +136,7 @@
             <!-- <div class="row row_grid ">
                 <div class="col-md-4 col-sm-4 col-projects">
                     <img class="imageProjectHome img-fluid image" src="img/invisible-bearing.png">
-                    <a href="casajasmina.html">
+                    <a href="casajasmina.">
                         <div class="gradient"></div>
                     </a>
                     <div class="imageTitle">
@@ -148,7 +148,7 @@
                 </div>
                 <div class=" col-md-4 col-sm-4 col-projects ">
                     <img class="img-responsive img-fluid image" src="img/ado.png">
-                    <a href="ado.html">
+                    <a href="ado.">
                         <div class="gradient"></div>
                     </a>
                     <div class="imageTitle">
@@ -160,7 +160,7 @@
                 </div>
                 <div class=" col-md-4 col-sm-4 col-projects">
                     <img class="img-responsive img-fluid image" src="img/brachetti.png">
-                    <a href="casajasmina.html">
+                    <a href="casajasmina.">
                         <div class="gradient"></div>
                     </a>
                     <div class="imageTitle">
@@ -177,7 +177,7 @@
 
         <div id="nav_container">
             <div id="nav_up">
-                <a class="conTop" href="contacts.html">
+                <a class="conTop" href="contacts">
                     <div id="contactsTop" class="title ">CONTACTS</div>
                 </a>
                 <a class="projLeft" href="index.html">
