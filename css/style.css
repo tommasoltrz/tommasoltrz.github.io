@@ -78,6 +78,7 @@ a, a:hover {
     text-decoration: none;
     cursor: pointer;
 }
+
 strong {
     color: #4E5B61;
 }
@@ -89,9 +90,10 @@ ul {
 .link {
     background: linear-gradient(180deg, #fff 80%, #BFFE51 20%);
 }
+
 .link:hover {
-  transition: all 0.5s;
-  color: #4E5B61;
+    transition: all 0.5s;
+    color: #4E5B61;
 }
 
 .row {
@@ -274,14 +276,18 @@ h2 {
 
 .single_project_text_col {
     margin: auto;
+    margin-top: 0px;
 }
+
 .video {
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
 .github_icon {
     margin: auto;
 }
+
 
 /*/////// BUTTONS  ///////*/
 
@@ -295,6 +301,7 @@ h2 {
     letter-spacing: 5px;
     color: #DAE3E3;
 }
+
 #nav_projects_container a {
     display: inline-block;
     transition: color 0.3s linear;
@@ -325,15 +332,14 @@ h2 {
     background: #BFFE51 !important;
     text-decoration: none;
     cursor: pointer;
-
 }
 
 
 /*/////// GALLERY  ///////*/
 
-.demo-gallery{
-  margin-top: 30px;
-  margin-bottom: 30px;
+.demo-gallery {
+    margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .gallery_col {
@@ -450,35 +456,42 @@ h2 {
     }
 }
 
+
 /*/////// SMALL VIEW ///////*/
 
 @media screen and (max-width: 768px) {
-
-  .body {
-      padding-left: 0px;
-      padding-right: 0px;
-
-  }
-    .single_project_col{
-      padding-left: 0px !important;
-      padding-right: 0px !important;
+    .body {
+        padding-left: 0px;
+        padding-right: 0px;
     }
-    #single_project_image_container{
-      min-width: 100% !important;
+    .single_project_col {
+        padding-left: 0px !important;
+        padding-right: 0px !important;
     }
-    #single_project_Image{
-      background-position: 0px 10px;
-      width: 100vw ;
+    #single_project_image_container {
+        min-width: 100% !important;
+    }
+    #single_project_Image {
+        background-position: 0px 10px;
+        width: 100vw;
     }
     .BoxTitle {
         font-size: 1.2em;
     }
-    .video-col{
-      min-width: 100% !important;
+    .video-col {
+        min-width: 100% !important;
     }
     .demo-gallery>ul>li {
         margin-bottom: 16px;
         max-width: 120px;
     }
+}
 
+
+/*/////// MIDDLE VIEW ///////*/
+
+@media screen and (max-width: 1280px) {
+    .container {
+        max-width: 900px;
+    }
 }
