@@ -279,9 +279,17 @@ h2 {
     margin-top: 0px;
 }
 
+.single_project_img_col {
+
+    background-color:#F5F5F5;
+    display: flex;
+    justify-content: center;
+
+}
+
 .video {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .github_icon {
