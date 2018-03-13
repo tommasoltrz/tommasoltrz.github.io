@@ -123,12 +123,14 @@ document.addEventListener('DOMContentLoaded', function() {
     };
 
 
+    var inHome=false;
 
     // ########## HOME TRANSITIONS ########## /
 
     var home = Barba.BaseView.extend({
         namespace: 'home',
         onEnterCompleted: function() {
+            inHome=true;
             init();
             if (render_started==false){
               render();
@@ -146,7 +148,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 shuffle_right_nav.reveal(1000);
             }
             document.getElementsByTagName("BODY")[0].ondblclick = function() {
-                    if (!invertedColours) {
+                    if (!invertedColours && inHome) {
                         invertedColours = true;
                         document.getElementsByTagName("BODY")[0].style.backgroundColor = "#2C353A";
                     } else {
@@ -159,6 +161,7 @@ document.addEventListener('DOMContentLoaded', function() {
             explode();
             document.getElementsByTagName("BODY")[0].style.backgroundColor = "white";
             invertedColours = false;
+            inHome=false;
         },
         onLeaveCompleted: function() {
             clearInterval(LoadingModels);
@@ -414,7 +417,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     y: 400,
                     height: 0
                 });
-                TweenLite.set(".single_project_content_row, .video, .btn , .single_project_title", {
+                TweenLite.set(".single_project_content_row, .video, .btn , .single_project_title, .half-rule, .single_project_img_col", {
                     opacity: 0
                 });
 
@@ -438,7 +441,7 @@ document.addEventListener('DOMContentLoaded', function() {
                         TweenLite.to(".single_project_title", 0.5, {
                             opacity: 1,
                             onComplete: function() {
-                                TweenLite.to(".single_project_content_row, .video, .btn", 0.5, {
+                                TweenLite.to(".single_project_content_row, .video, .btn, .half-rule, .single_project_img_col", 0.5, {
                                     opacity: 1
                                 });
                             }
@@ -452,7 +455,7 @@ document.addEventListener('DOMContentLoaded', function() {
         onLeave: function() {
           if (window.innerWidth >= 720 && !firefox) controller = controller.destroy(true);
           var container = document.getElementById("single_project_image_container");
-          TweenLite.to(".single_project_content_row, .video", 0.5, {
+          TweenLite.to(".single_project_content_row, .video, .single_project_img_col, .btn, .half-rule", 0.5, {
               opacity: 0
           });
           TweenLite.to(".single_project_title", 0.5, {
