@@ -156,6 +156,18 @@ document.addEventListener('DOMContentLoaded', function() {
                         document.getElementsByTagName("BODY")[0].style.backgroundColor = "white";
                     }
             };
+
+            var resizeId;
+            window.onresize = function() {
+                clearTimeout(resizeId);
+                resizeId = setTimeout(doneResizing, 500);
+            };
+
+            function doneResizing() {
+                if (window.innerWidth > 720) {
+                
+                }
+            }
         },
         onLeave: function() {
             explode();
