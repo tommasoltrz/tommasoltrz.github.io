@@ -165,7 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             function doneResizing() {
                 if (window.innerWidth > 720) {
-                
+
                 }
             }
         },
@@ -234,8 +234,15 @@ document.addEventListener('DOMContentLoaded', function() {
                         });
                         TweenLite.to(gradients, 0.8, {
                             width: images.width,
-                            zIndex: -1
+                            zIndex: -1,
+                            onComplete: function(){
+                              if(window.innerWidth <= 720){
+                              TweenLite.to(".imageTitle", 0.8, {
+                                  opacity: 1,
+                              });}
+                            }
                         });
+
                     }
                 }
                 TweenLite.to('.image', 1.2, {
@@ -245,7 +252,7 @@ document.addEventListener('DOMContentLoaded', function() {
             }
         },
         onLeave: function() {
-            TweenLite.to('.image', 0.5, {
+            TweenLite.to('.image, .imageTitle', 0.5, {
                 opacity: 0,
                 onComplete: function() {
                     var containers = document.getElementsByClassName("col-projects");

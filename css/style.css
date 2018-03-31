@@ -509,6 +509,14 @@ h2 {
         background-position: 0px 10px;
         width: 100vw;
     }
+    .imageTitle{
+      position:relative;
+      top: 0%;
+      left: 50%;
+      transform: translate(-50%, 0%);
+      -ms-transform: translate(-50%, 0%);
+      min-width: 100% !important;
+    }
     .BoxTitle {
         font-size: 1.2em;
     }
