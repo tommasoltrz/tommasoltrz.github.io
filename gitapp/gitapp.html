@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="mespeak.js"></script>
+    <script type="text/javascript" src="custom.js"></script>
+</head>
+
+<body>
+
+    <video playsinline autoplay muted loop id="bgvid">
+      <source src="video/noise.mp4" type="video/mp4">
+  </video>
+
+    <div class="keys">
+        <div data-key="65" class="key">
+            <kbd>A</kbd>
+            <span class="sound">Pull it</span>
+        </div>
+        <div data-key="83" class="key">
+            <kbd>S</kbd>
+            <span class="sound">Stash it</span>
+        </div>
+        <div data-key="68" class="key">
+            <kbd>D</kbd>
+            <span class="sound">Work it</span>
+        </div>
+        <div data-key="70" class="key">
+            <kbd>F</kbd>
+            <span class="sound">Com it</span>
+        </div>
+        <div data-key="71" class="key">
+            <kbd>G</kbd>
+            <span class="sound">Branch it</span>
+        </div>
+        <div data-key="72" class="key">
+            <kbd>H</kbd>
+            <span class="sound">Push it</span>
+        </div>
+        <div data-key="74" class="key">
+            <kbd>J</kbd>
+            <span class="sound">Pull request it</span>
+        </div>
+    </div>
+
+    <img id="gear" src="img/gear.svg">
+
+    <div id="inputtext">
+        <p>A</p><textarea></textarea>
+        <p>S</p><textarea></textarea>
+        <p>D</p><textarea></textarea>
+        <p>F</p><textarea></textarea>
+        <p>G</p><textarea></textarea>
+        <p>H</p><textarea></textarea>
+        <p>J</p><textarea></textarea>
+        <p>SPACE BAR</p><textarea></textarea>
+
+        <button id="button">Save</button>
+      </div>
+
+
+    <div class="keys">
+        <div data-key="88" class="key">
+            <kbd>X</kbd>
+            <span class="sound">Play</span>
+        </div>
+        <div data-key="32" class="key" id="spacebar">
+            <kbd>SPACE BAR</kbd>
+            <span class="sound">MERGE it</span>
+        </div>
+        <div data-key="77" class="key">
+            <kbd>M</kbd>
+            <span class="sound">Pause</span>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
