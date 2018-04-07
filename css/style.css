@@ -490,6 +490,13 @@ h2 {
     }
 }
 
+/*/////// MIDDLE VIEW ///////*/
+
+@media screen and (max-width: 1281px) {
+    .container {
+        max-width: 900px;
+    }
+}
 
 /*/////// SMALL VIEW ///////*/
 
@@ -531,14 +538,5 @@ h2 {
         margin: auto;
         margin-top: 0px;
         margin-bottom: 0px;
-    }
-}
-
-
-/*/////// MIDDLE VIEW ///////*/
-
-@media screen and (max-width: 1280px) {
-    .container {
-        max-width: 900px;
     }
 }
