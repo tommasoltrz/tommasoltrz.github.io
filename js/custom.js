@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 shuffle_right_nav.text(text => 'PROJECTS');
                 shuffle_right_nav.reveal(1000);
             }
-            document.getElementsByTagName("BODY")[0].ondblclick = function() {
+            document.getElementsByTagName("BODY")[0].onclick = function() {
                     if (!invertedColours && inHome) {
                         invertedColours = true;
                         document.getElementsByTagName("BODY")[0].style.backgroundColor = "#2C353A";
