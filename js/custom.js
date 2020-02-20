@@ -150,10 +150,10 @@ document.addEventListener('DOMContentLoaded', function() {
             document.getElementsByTagName("BODY")[0].ondblclick = function() {
                     if (!invertedColours && inHome) {
                         invertedColours = true;
-                        document.getElementsByTagName("BODY")[0].style.backgroundColor = "#2C353A";
+                        document.getElementsByTagName("BODY")[0].style.backgroundColor = "#fff";
                     } else {
                         invertedColours = false;
-                        document.getElementsByTagName("BODY")[0].style.backgroundColor = "white";
+                        document.getElementsByTagName("BODY")[0].style.backgroundColor = "#2C353A";
                     }
             };
 

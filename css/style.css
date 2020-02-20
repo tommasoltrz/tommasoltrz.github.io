@@ -66,11 +66,12 @@
 /*########### HTML BASIC ###########*/
 
 body {
-    background-color: #fff;
+    background-color: #2C353A;
     font-family: 'Roboto Condensed', sans-serif;
     color: #95A5A6;
     height: 100%;
     transition: all 1s;
+    cursor: pointer;
 }
 
 a, a:hover {
@@ -129,6 +130,7 @@ h2 {
 }
 
 #nav_container {
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
