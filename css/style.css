@@ -71,7 +71,7 @@ body {
     color: #95A5A6;
     height: 100%;
     transition: all 1s;
-    cursor: pointer;
+    cursor: grab;
 }
 
 a, a:hover {
