@@ -147,15 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 shuffle_right_nav.text(text => 'PROJECTS');
                 shuffle_right_nav.reveal(1000);
             }
-            document.getElementsByTagName("BODY")[0].ondblclick = function() {
-                    if (!invertedColours && inHome) {
-                        invertedColours = true;
-                        document.getElementsByTagName("BODY")[0].style.backgroundColor = "#fff";
-                    } else {
-                        invertedColours = false;
-                        document.getElementsByTagName("BODY")[0].style.backgroundColor = "#2C353A";
-                    }
-            };
+  
 
             var resizeId;
             window.onresize = function() {
