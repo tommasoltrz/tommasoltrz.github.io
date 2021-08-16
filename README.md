@@ -4,4 +4,4 @@
 
 ## Old Portfolio Landing Page
 
-[tommasolaterza.com](https://tommasoltrz.github.io/)
+[tommasoltrz.github.io](https://tommasoltrz.github.io/)
